@@ -58,7 +58,7 @@
 # ✅ Your native modules
 -keep class com.reactnativeandroidsmslistener.** { *; }
 -keep class com.devicesettings.** { *; }
--keep class com.dmartuser.client.** { *; }
+-keep class com.jiomart.ready.app.** { *; }
 
 # ✅ AndroidX
 -keep class androidx.** { *; }

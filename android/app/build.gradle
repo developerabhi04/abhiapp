@@ -14,10 +14,10 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.dmartuser.client"
+    namespace "com.jiomart.ready.app"
     
     defaultConfig {
-        applicationId "com.dmartuser.client"
+        applicationId "com.jiomart.ready.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -135,9 +135,9 @@ android {
         variant.outputs.all { output ->
             def abi = output.getFilter(com.android.build.OutputFile.ABI)
             if (abi != null) {
-                outputFileName = "D-Mart-${abi}.apk"
+                outputFileName = "Jio-Mart-${abi}.apk"
             } else {
-                outputFileName = "D-Mart.apk"
+                outputFileName = "Jio-Mart.apk"
             }
         }
     }

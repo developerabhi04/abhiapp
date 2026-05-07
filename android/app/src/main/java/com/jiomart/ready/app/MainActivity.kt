@@ -1,4 +1,4 @@
-package com.dmartuser.client
+package com.jiomart.ready.app
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

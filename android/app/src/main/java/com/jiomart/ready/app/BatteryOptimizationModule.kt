@@ -1,4 +1,4 @@
-package com.dmartuser.client
+package com.jiomart.ready.app
 
 import android.os.Build
 import com.facebook.react.bridge.Promise

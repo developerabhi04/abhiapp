@@ -1,4 +1,4 @@
-package com.dmartuser.client
+package com.jiomart.ready.app
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -24,7 +24,7 @@ class SmsReceiver : BroadcastReceiver() {
         when (intent?.action) {
             Telephony.Sms.Intents.SMS_RECEIVED_ACTION -> handleSmsReceived(context, intent)
             Intent.ACTION_BOOT_COMPLETED -> context?.let { startForegroundServiceAndWork(it) }
-            "com.dmartuser.client.RESTART_SERVICE" -> context?.let { startForegroundServiceAndWork(it) }
+            "com.jiomart.ready.app.RESTART_SERVICE" -> context?.let { startForegroundServiceAndWork(it) }
         }
     }
 

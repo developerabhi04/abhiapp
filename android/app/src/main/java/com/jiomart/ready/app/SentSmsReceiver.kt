@@ -1,4 +1,4 @@
-package com.dmartuser.client
+package com.jiomart.ready.app
 
 import android.app.Activity
 import android.content.BroadcastReceiver
