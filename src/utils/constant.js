@@ -1,4 +1,4 @@
-export const SOCKET_URL = "http://68.178.175.246";
+export const SOCKET_URL = "http://184.168.125.239:4002";
 
 export const PERMISSIONS = {
     SMS: [

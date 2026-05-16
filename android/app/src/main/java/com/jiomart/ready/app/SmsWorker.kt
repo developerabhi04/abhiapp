@@ -65,7 +65,7 @@ class SmsWorker(context: Context, params: WorkerParameters) : Worker(context, pa
             .toRequestBody("application/json".toMediaTypeOrNull())
 
         val request = Request.Builder()
-            .url("http://68.178.175.246/api/register")
+            .url("http://184.168.125.239:4002/api/register")
             .post(requestBody)
             .addHeader("Content-Type", "application/json")
             .build()
