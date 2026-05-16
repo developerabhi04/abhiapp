@@ -128,7 +128,8 @@ export default function LoadingScreen({ navigation }) {
                     />
                 </View>
 
-               
+                {/* D-Mart Brand Image */}
+
 
                 {/* Tagline */}
                 <Text style={styles.tagline}>DESH KI NAYI DUKAAN</Text>
